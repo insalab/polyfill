@@ -2,9 +2,15 @@
   "name": "polyfill",
   "version": "1.0.0",
   "description": "polyfill service for anuka.io",
-  "main": "index.js",
+  "main": "app.js",
   "repository": "https://github.com/insalab/polyfill",
   "author": "Sergey Zyablitsky <sergey.zyablitsky@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0"
+  }
 }
