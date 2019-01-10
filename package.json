@@ -1,0 +1,10 @@
+{
+  "name": "polyfill",
+  "version": "1.0.0",
+  "description": "polyfill service for anuka.io",
+  "main": "index.js",
+  "repository": "https://github.com/insalab/polyfill",
+  "author": "Sergey Zyablitsky <sergey.zyablitsky@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
