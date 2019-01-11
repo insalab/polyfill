@@ -1,10 +1,28 @@
+/* eslint no-sync: ["error", { allowAtRootLevel: true }] */
+
+const fs = require('fs')
+
+const polyfillCode = fs.readFileSync('./node_modules/intl/dist/Intl.min.js', 'utf8')
+const localeCode = fs.readFileSync('./node_modules/intl/locale-data/jsonp/ru.js', 'utf8')
+
+const content = `${polyfillCode}\n${localeCode}\n`
+
+const browsers = [
+  /XiaoMi\/MiuiBrowser/u,
+]
+
+const polyfillRequired = (userAgent) => browsers.some((browser) => browser.test(userAgent))
+
 const express = require('express')
 const app = express()
 
-app.get('/', function (req, res) {
-  res.send(req.headers['user-agent'])
+app.get('/intl.js', function (req, res) {
+  const userAgent = req.headers['user-agent']
+
+  res.setHeader('Content-Type', 'application/javascript');
+  res.send(polyfillRequired(userAgent) ? content : '')
 })
 
 app.listen(3000, function () {
-  console.log('Example app listening on port 3000!')
+  // noop
 })

@@ -8,7 +8,10 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "express": "^4.16.4"
+    "bowser": "^2.0.0-beta.3",
+    "express": "^4.16.4",
+    "intl": "^1.2.5",
+    "useragent": "^2.3.0"
   },
   "devDependencies": {
     "eslint": "^5.12.0"
