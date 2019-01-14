@@ -23,7 +23,7 @@ app.get('/intl.js', function (req, res) {
   const userAgent = req.headers['user-agent']
 
   res.setHeader('Content-Type', 'application/javascript');
-  res.send(polyfillRequired(userAgent) ? content : '')
+  res.send(polyfillRequired(userAgent) ? content : '/* no polyfill needed */')
 })
 
 app.listen(3000, function () {
