@@ -12,6 +12,7 @@ const content = `${polyfillCode}\n${localeCode}\n`
 // https://github.com/3rd-Eden/useragent/blob/master/lib/regexps.js
 const browsers = [
   /XiaoMi\/MiuiBrowser/,
+  /MZBrowser/,
 ]
 
 const polyfillRequired = (userAgent) => browsers.some((browser) => browser.test(userAgent))
