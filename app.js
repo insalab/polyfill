@@ -9,7 +9,6 @@ const localeCode = fs.readFileSync('./node_modules/intl/locale-data/jsonp/ru.js'
 
 const content = `${polyfillCode}\n${localeCode}\n`
 
-// https://github.com/3rd-Eden/useragent/blob/master/lib/regexps.js
 const browsers = [
   /XiaoMi\/MiuiBrowser/,
   /MZBrowser/,
