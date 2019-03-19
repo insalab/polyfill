@@ -12,6 +12,8 @@ const content = `${polyfillCode}\n${localeCode}\n`
 const browsers = [
   /XiaoMi\/MiuiBrowser/,
   /MZBrowser/,
+  /Chrome\/3[78]/,
+  /Android 4\./
 ]
 
 const polyfillRequired = (userAgent) => browsers.some((browser) => browser.test(userAgent))
