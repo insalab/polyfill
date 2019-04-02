@@ -9,11 +9,15 @@ const localeCode = fs.readFileSync('./node_modules/intl/locale-data/jsonp/ru.js'
 
 const content = `${polyfillCode}\n${localeCode}\n`
 
+/* eslint-disable require-unicode-regexp */
 const browsers = [
   /XiaoMi\/MiuiBrowser/,
   /MZBrowser/,
-  /Chrome\/(3[78]|47)/,
-  /Android 4\./
+  /Chrome\/(3[45678]|47)/,
+  /Android 4\./,
+  /SM-G930F/,
+  /MSIE 7/,
+  /UCBrowser\/11/,
 ]
 
 const polyfillRequired = (userAgent) => browsers.some((browser) => browser.test(userAgent))
