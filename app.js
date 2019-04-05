@@ -13,7 +13,7 @@ const content = `${polyfillCode}\n${localeCode}\n`
 const browsers = [
   /XiaoMi\/MiuiBrowser/,
   /MZBrowser/,
-  /Chrome\/(3[45678]|47)/,
+  /Chrome\/(3[\d]|4[0-7])/,
   /Android 4\./,
   /SM-G930F/,
   /MSIE 7/,
