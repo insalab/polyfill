@@ -17,7 +17,7 @@ const browsers = [
   /Android 4\./,
   /SM-G930F/,
   /MSIE 7/,
-  /UCBrowser\/11/,
+  /UCBrowser\/1[12]/,
 ]
 
 const polyfillRequired = (userAgent) => browsers.some((browser) => browser.test(userAgent))
