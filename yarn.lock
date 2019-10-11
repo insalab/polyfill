@@ -106,10 +106,10 @@ body-parser@1.19.0:
     raw-body "2.4.0"
     type-is "~1.6.17"
 
-bowser@^2.0.0-beta.3:
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/bowser/-/bowser-2.0.0-beta.3.tgz#1b74d4fd69199aa237bc0f1f4c5e80df711635d8"
-  integrity sha512-eHZmZrwbWb8pZn7XtIrtpni/EjHgU6DZEcvJUrLRrTtnhBY8Kbj379JY+GGKeJ7CctidvWP2ueBAAzGDenydCg==
+bowser@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/bowser/-/bowser-2.7.0.tgz#96eab1fa07fab08c1ec4c75977a7c8ddf8e0fe1f"
+  integrity sha512-aIlMvstvu8x+34KEiOHD3AsBgdrzg6sxALYiukOWhFvGMbQI6TRP/iY0LMhUrHs56aD6P1G0Z7h45PUJaa5m9w==
 
 brace-expansion@^1.1.7:
   version "1.1.11"
