@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "bowser": "^2.7.0",
+    "bowser": "^2.10.0",
     "express": "^4.17.1",
     "intl": "^1.2.5",
     "useragent": "^2.3.0"
