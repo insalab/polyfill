@@ -14,6 +14,6 @@
     "useragent": "^2.3.0"
   },
   "devDependencies": {
-    "eslint": "^6.5.1"
+    "eslint": "^7.13.0"
   }
 }
